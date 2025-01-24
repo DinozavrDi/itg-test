@@ -27,12 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${monserat.variable} ${open_sans.variable} antialiased bg-white`}
+        className={`${monserat.variable} ${open_sans.variable} antialiased bg-white min-h-screen`}
       >
         <Header/>
         <div className="flex">
           <Drawer/>
-          {children}
+          <main className="px-4 w-full overflow-y-auto">
+            {children}
+          </main>
+          
         </div>
 
       </body>
