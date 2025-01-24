@@ -9,9 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        itg: {
+          100: "#FCFCFD",
+          200: '#D5D8DD',
+          300: '#ABB1BA',
+          700: '#2E3238',
+        }
       },
+      fontFamily: {
+        monserat: ["var(--font-monserat)"],
+        open_sans: ["var(--font-open-sans)"],
+      }
     },
   },
   plugins: [],
