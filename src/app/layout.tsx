@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Open_Sans } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import Drawer from "@/components/drawer/drawer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const monserat = Montserrat({
+  variable: "--font-monserat",
+  subsets: ["latin", 'cyrillic'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const open_sans = Open_Sans({
+  variable: "--font-open-sans",
+  subsets: ["latin", 'cyrillic'],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +27,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${monserat.variable} ${open_sans.variable} antialiased bg-white`}
       >
-        {children}
+        <Header/>
+        <div className="flex">
+          <Drawer/>
+          {children}
+        </div>
+
       </body>
     </html>
   );
