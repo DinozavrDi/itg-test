@@ -32,7 +32,7 @@ export default function RootLayout({
         <Header/>
         <div className="flex">
           <Drawer/>
-          <main className="px-4 w-full overflow-y-auto">
+          <main className=" w-full overflow-y-auto max-h-[calc(100vh-48px)]">
             {children}
           </main>
           

@@ -1,6 +1,6 @@
 function BaseInput({ label, required=false }: { label: string, required?: boolean }) {
     return (
-        <div className="flex flex-col gap-3 flex-1 w-full min-w-[550px]">
+        <div className="flex flex-col gap-3 flex-1 w-full min-w-[252px]">
             <label htmlFor={label} className="flex gap-1 text-sm font-open_sans font-semibold text-itg-700"> 
                 <span className={` ${ required ? 'block ' : 'hidden'} text-red-500`}>*</span> 
                 { label } 
