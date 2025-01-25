@@ -3,6 +3,7 @@ import BaseInput from "@/components/inputs/base-input";
 import DateInput from "@/components/inputs/date-input";
 import TagedInput from "@/components/inputs/taged-input";
 import TaskModal from "@/components/modal/task-modal";
+import Split from "@/components/split/split";
 
 export default function Home() {
   return (
@@ -64,10 +65,3 @@ export default function Home() {
   );
 }
 
-export function Split({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="flex flex-wrap w-full justify-between gap-4 ">
-      { children }
-    </div>
-  )
-}

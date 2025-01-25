@@ -3,11 +3,11 @@
 import { useState } from "react"
 import { BlueButton, MainButton } from "../buttons/button"
 import { Modal } from "@mui/material"
-import { Split } from "@/app/page"
 import DateInput from "../inputs/date-input"
 import TagedInput from "../inputs/taged-input"
 import BaseInput from "../inputs/base-input"
 import IconButton from "../buttons/icon-button"
+import Split from "../split/split"
 
 function TaskModal() {
 
